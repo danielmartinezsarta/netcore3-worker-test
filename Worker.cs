@@ -21,7 +21,7 @@ namespace worker_service
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                _logger.LogInformation("Tu hermana ejecutandose cada 30 segundos: {time}", DateTimeOffset.Now);
+                _logger.LogInformation("Tarea ejecutandose cada 30 segundos: {time}", DateTimeOffset.Now);
                 await Task.Delay(30000, stoppingToken);
             }
         }
